@@ -96,54 +96,60 @@ streamlit run app.py
 
 Below are the classification reports and performance metrics for each model. Metrics are based on the test dataset used.
 
-Logistic Regression
+## 📊 Logistic Regression Performance
 
-              precision    recall  f1-score   support
+## 📊 Logistic Regression Performance
 
-           0       1.00      0.95      0.97   1,906,322
-           1       0.02      0.94      0.04     2,464
+| Class        | Precision | Recall | F1-score | Support    |
+|--------------|-----------|--------|----------|------------|
+| 0            | 1.00      | 0.95   | 0.97     | 1,906,322  |
+| 1            | 0.02      | 0.94   | 0.04     | 2,464      |
+| **Accuracy** | -         | -      | 0.95     | 1,908,786  |
+| **Macro Avg**| 0.51      | 0.94   | 0.51     | 1,908,786  |
+| **Weighted Avg** | 1.00   | 0.95   | 0.97     | 1,908,786  |
 
-    accuracy                           0.95   1,908,786
-   macro avg       0.51      0.94      0.51   1,908,786
-weighted avg       1.00      0.95      0.97   1,908,786
+**Confusion Matrix:**  
 
-Confusion Matrix:
  [[1804823  101499]
  [    151    2313]]
-ROC-AUC: 0.9891  
-PR-AUC: 0.5452
 
 
-Random Forest
-              precision    recall  f1-score   support
+**ROC-AUC:** 0.9891  
+**PR-AUC:** 0.5452  
 
-           0       1.00      1.00      1.00   1,906,322
-           1       0.96      0.78      0.86     2,464
+---
 
-    accuracy                           1.00   1,908,786
-   macro avg       0.98      0.89      0.93   1,908,786
-weighted avg       1.00      1.00      1.00   1,908,786
+### Random Forest
 
-Confusion Matrix:
- [[1906252      70]
- [    548    1916]]
-ROC-AUC: 0.9948  
-PR-AUC: 0.9402
+| Class           | Precision | Recall | F1-score | Support    |
+|-----------------|-----------|--------|----------|------------|
+| 0               | 1.00      | 1.00   | 1.00     | 1,906,322  |
+| 1               | 0.96      | 0.78   | 0.86     | 2,464      |
+| **Accuracy**    | -         | -      | 1.00     | 1,908,786  |
+| **Macro Avg**   | 0.98      | 0.89   | 0.93     | 1,908,786  |
+| **Weighted Avg**| 1.00      | 1.00   | 1.00     | 1,908,786  |
+
+**Confusion Matrix:**  
+[[1906252  70]
+[ 548  1916]]
 
 
-XGBoost
 
-              precision    recall  f1-score   support
+**ROC-AUC:** 0.9948  
+**PR-AUC:** 0.9402  
 
-           0       1.00      1.00      1.00   1,906,322
-           1       0.40      0.99      0.57     2,464
+---
 
-    accuracy                           1.00   1,908,786
-   macro avg       0.70      0.99      0.78   1,908,786
-weighted avg       1.00      1.00      1.00   1,908,786
+### XGBoost
 
-Confusion Matrix:
- [[1902655    3667]
- [     34    2430]]
-ROC-AUC: 0.9995  
-PR-AUC: 0.9379
+| Class           | Precision | Recall | F1-score | Support    |
+|-----------------|-----------|--------|----------|------------|
+| 0               | 1.00      | 1.00   | 1.00     | 1,906,322  |
+| 1               | 0.40      | 0.99   | 0.57     | 2,464      |
+| **Accuracy**    | -         | -      | 1.00     | 1,908,786  |
+| **Macro Avg**   | 0.70      | 0.99   | 0.78     | 1,908,786  |
+| **Weighted Avg**| 1.00      | 1.00   | 1.00     | 1,908,786  |
+
+**Confusion Matrix:**  
+
+
