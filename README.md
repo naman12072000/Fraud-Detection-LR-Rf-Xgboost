@@ -74,6 +74,8 @@ pip install -r requirements.txt
 load dataset from kaggle
 
 streamlit run app.py
+'''
+
 
 ---
 
