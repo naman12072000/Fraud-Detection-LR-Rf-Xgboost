@@ -150,6 +150,13 @@ Below are the classification reports and performance metrics for each model. Met
 | **Macro Avg**   | 0.70      | 0.99   | 0.78     | 1,908,786  |
 | **Weighted Avg**| 1.00      | 1.00   | 1.00     | 1,908,786  |
 
-**Confusion Matrix:**  
+**Confusion Matrix:** 
+[[1902655 3667]
+[ 34 2430]]
+
+
+**ROC-AUC:** 0.9995  
+**PR-AUC:** 0.9379  
+
 
 
